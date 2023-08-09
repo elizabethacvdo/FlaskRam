@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}
+Agregar nuevo estudiante
+{% endblock %}
+{% block content %}
+        <form action="{{ url_for('addrec') }}" method="POST">
+            <h3>Agregar informacion:</h3>
+            nombre<br>
+            <input type="text" name="nm" /><br>
+
+            direccion<br>
+            <textarea name="add"></textarea><br>
+
+            ciudad<br>
+            <input type="text" name="city" /><br>
+
+            Zip Code<br>
+            <input type="text" name="zip" /><br>
+
+            <input type="submit" value="Submit" /><br>
+        </form>
+{% endblock %}
